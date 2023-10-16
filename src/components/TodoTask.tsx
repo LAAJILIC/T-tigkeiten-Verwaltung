@@ -26,8 +26,9 @@ function TodoTask({ todo, todos, setTodos }: Props) {
 
   const handleSubmit = (id : number, e: React.FormEvent) => {
     e.preventDefault();
-    setTodos(todos.map(todo => todo.id === id ? {...todo, name: editTask} : todo))
-    setEdit(false)
+    if(editTask)
+           {setTodos(todos.map(todo => todo.id === id ? {...todo, name: editTask} : todo))
+           setEdit(false)}
   }
   return (     
                   <form className='box_task'  onSubmit={(e) => {
@@ -36,9 +37,9 @@ function TodoTask({ todo, todos, setTodos }: Props) {
                     {
                       edit ? ( 
                         <div className='update'>
-                       <input className='new_task' type='input' value={editTask} placeholder='Edit the task' 
+                       <input className='new_task' type='input' value={editTask} placeholder='Geben Sie die Aufgabe ein' 
                        onChange={(e) => setEditTask(e.target.value)}></input>
-                       <button className='validate_task' type='submit'>GO</button> </div>
+                       <button className='validate_task' type='submit'>Weiter</button> </div>
                        ) : 
                     todo.isDone ? (
                       <s className='task_name'>{todo.name}</s>

@@ -8,27 +8,33 @@ align-items: center;
 background-color: rgba(6, 106, 188, 0.588);
 }
 .header{
-  display: flex;
+  display:inline-flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 50%;
+  position: relative; left: 20%; top: 0%; right: 0%;
+
 }
 .name {
   font-size: 25px;
   color: rgb(38, 39, 39);
   z-index: 1;
   align-items: center;
-  margin-left: 20%;
+
+
 color: rgba(254, 253, 253, 0.484);
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-style: italic;
 }
 .date{
+padding-right: 0%;
+padding-left: 0%;
   max-height: fit-content;
-  min-width: 70%;
-  margin-left: 120%;
+  min-width: 25%;
   margin-right: 0%;
   justify-content: center;
   color: rgba(254, 253, 253, 0.484);
+  position: absolute; top: 0%; right: 0%;
 
 }
 @media (max-width :800) {

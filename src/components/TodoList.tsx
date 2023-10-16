@@ -11,7 +11,7 @@ function TodoList({ todos, setTodos } : Props) {
   return (
     <div className='list'>
         <div className='active-list'> 
-           <span className='active'>Active Tasks</span>
+           <span className='active'>Aktive Aufgaben</span>
             { 
                 todos.map(todo => ( !todo.isDone ? 
     //<li>{todo.name}</li>
@@ -21,7 +21,7 @@ function TodoList({ todos, setTodos } : Props) {
         </div>
 
         <div className='done-list'>
-        <span className='done'>Completed Tasks</span>
+        <span className='done'>Erledigte Aufgaben</span>
             {
                 todos.map(todo => ( todo.isDone ?
     //<li>{todo.name}</li>

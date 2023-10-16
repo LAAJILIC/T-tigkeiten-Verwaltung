@@ -25,7 +25,7 @@ function App() {
     <div className="App"> 
     <div className='header'>
     <h3 className='name'>Tätigkeiten</h3>
-    <h2 className='date'>{date.getMonth()+1} / {date.getDate()} /{date.getFullYear()}</h2>
+    <h2 className='date'>{date.getMonth()+1}/{date.getDate()}/{date.getFullYear()}</h2>
     </div>
     <InputTask todo={todo} setTodo={setTodo} handleTodos={handleTodos} />
     <TodoList setTodo={setTodo} todos={todos} setTodos={setTodos} /> 

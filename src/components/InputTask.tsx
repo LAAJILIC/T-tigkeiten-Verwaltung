@@ -13,9 +13,10 @@ function InputTask({ todo, setTodo, handleTodos }: Props) {
     <form className='form' onSubmit={(e) => {
       handleTodos(e);
       inputRef.current?.blur();
+
       }}>
-    <input ref={inputRef} className='input' type='input' placeholder='Enter The Task' value={todo} onChange={(e) => setTodo(e.target.value)}></input>
-    <button className='button' type='submit'>GO</button>
+    <input ref={inputRef} className='input' type='input' placeholder='Geben Sie die Aufgabe ein' value={todo} onChange={(e) => setTodo(e.target.value)}></input>
+    <button className='button' type='submit'>Weiter</button>
     </form>
   )
 }
