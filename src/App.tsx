@@ -22,10 +22,10 @@ function App() {
 };
   console.log(todos);
   return (
-    <div className="App"> 
+    <div className="app"> 
     <div className='header'>
-    <h3 className='name'>Tätigkeiten</h3>
-    <h2 className='date'>{date.getMonth()+1}/{date.getDate()}/{date.getFullYear()}</h2>
+    <h2 className='name'>Tätigkeiten</h2>
+    <h3 className='date'>{date.getMonth()+1}/{date.getDate()}/{date.getFullYear()}</h3>
     </div>
     <InputTask todo={todo} setTodo={setTodo} handleTodos={handleTodos} />
     <TodoList setTodo={setTodo} todos={todos} setTodos={setTodos} /> 

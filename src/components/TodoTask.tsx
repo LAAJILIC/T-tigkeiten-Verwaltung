@@ -37,7 +37,7 @@ function TodoTask({ todo, todos, setTodos }: Props) {
                     {
                       edit ? ( 
                         <div className='update'>
-                       <input className='new_task' type='input' value={editTask} placeholder='Geben Sie die Aufgabe ein' 
+                       <input className='new_task' type='input' value={editTask} placeholder='Aktualisieren' 
                        onChange={(e) => setEditTask(e.target.value)}></input>
                        <button className='validate_task' type='submit'>Weiter</button> </div>
                        ) : 
